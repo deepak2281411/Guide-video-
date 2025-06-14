@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OLAMPUS Training Videos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      padding: 30px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .check-folder-btn, .manual-btn-top {
+      background-color: #6c757d;
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .check-folder-btn:hover, .manual-btn-top:hover {
+      background-color: #5a6268;
+    }
+
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-box {
+      background: #ffffff;
+      margin-bottom: 20px;
+      padding: 16px;
+      border-left: 5px solid #007BFF;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .video-box:hover {
+      transform: translateY(-2px);
+    }
+
+    .video-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .button-group a, .button-group button {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 5px;
+      padding: 8px 14px;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .play-btn {
+      background-color: #28a745;
+    }
+
+    .download-btn {
+      background-color: #007BFF;
+    }
+
+    .share-btn {
+      background-color: #17a2b8;
+    }
+
+    .copy-btn {
+      background-color: #6f42c1;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        flex-direction: column;
+      }
+
+      .button-group a, .button-group button {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>
+    OLAMPUS Training Video Library
+    <a class="check-folder-btn" href="https://drive.google.com/drive/folders/1yXz0qwq-HsyFc-4O_FrGmvp9yqfBTBKh" target="_blank">📁 Check Folder</a>
+    <a class="manual-btn-top" href="https://mfe-is.com/wp-content/uploads/2024/08/38DL-Manual.pdf" target="_blank">📘 View Manual</a>
+  </h1>
+
+  <div class="video-container">
+
+    <!-- Video 1 -->
+    <div class="video-box">
+      <div class="video-title">1. Display settings / Database create</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1yqa6LbAhl5uskTj-v7lETAwNkc8BrV9j/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1yqa6LbAhl5uskTj-v7lETAwNkc8BrV9j" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1yqa6LbAhl5uskTj-v7lETAwNkc8BrV9j/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1yqa6LbAhl5uskTj-v7lETAwNkc8BrV9j/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-box">
+      <div class="video-title">2. Gain adjustment</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1z63Zu3aPzOQvjUDgDNOhurg9A16PtTWA/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1z63Zu3aPzOQvjUDgDNOhurg9A16PtTWA" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1z63Zu3aPzOQvjUDgDNOhurg9A16PtTWA/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1z63Zu3aPzOQvjUDgDNOhurg9A16PtTWA/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-box">
+      <div class="video-title">3. Material checking process</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1zK8XpLMEcQeEt3EBu-Cv0tsegYisminA/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1zK8XpLMEcQeEt3EBu-Cv0tsegYisminA" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1zK8XpLMEcQeEt3EBu-Cv0tsegYisminA/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1zK8XpLMEcQeEt3EBu-Cv0tsegYisminA/view')">📋 Copy Link</button>
+      </div>
+    </div>
+    <!-- Video 4 -->
+    <div class="video-box">
+      <div class="video-title">4. Output analysis</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1z11xsqsp8iXbWNeGdNDoeTSx3jOdN6J3/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1z11xsqsp8iXbWNeGdNDoeTSx3jOdN6J3" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1z11xsqsp8iXbWNeGdNDoeTSx3jOdN6J3/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1z11xsqsp8iXbWNeGdNDoeTSx3jOdN6J3/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="video-box">
+      <div class="video-title">5. Probe default settings</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1zIyXBhdZwbFaRJotPqYV5dUeDbvI8w91/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1zIyXBhdZwbFaRJotPqYV5dUeDbvI8w91" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1zIyXBhdZwbFaRJotPqYV5dUeDbvI8w91/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1zIyXBhdZwbFaRJotPqYV5dUeDbvI8w91/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 6 -->
+    <div class="video-box">
+      <div class="video-title">6. Probe / Echo / Tolerance setting</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1yqNbzAd6Gp_05zCMtB-lUc7ycsd73H3y/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1yqNbzAd6Gp_05zCMtB-lUc7ycsd73H3y" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1yqNbzAd6Gp_05zCMtB-lUc7ycsd73H3y/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1yqNbzAd6Gp_05zCMtB-lUc7ycsd73H3y/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 7 -->
+    <div class="video-box">
+      <div class="video-title">7. Reset</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1ykLXMctXWUYGzxSaxu_4NPW_b8QVhRWg/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1ykLXMctXWUYGzxSaxu_4NPW_b8QVhRWg" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1ykLXMctXWUYGzxSaxu_4NPW_b8QVhRWg/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1ykLXMctXWUYGzxSaxu_4NPW_b8QVhRWg/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+    <!-- Video 8 -->
+    <div class="video-box">
+      <div class="video-title">8. Thickness checking</div>
+      <div class="button-group">
+        <a class="play-btn" href="https://drive.google.com/file/d/1yaxubqLiB2xwC5I0wsCxYTDLO9PBrEqO/view" target="_blank">▶️ Play on Drive</a>
+        <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1yaxubqLiB2xwC5I0wsCxYTDLO9PBrEqO" target="_blank">⬇️ Download</a>
+        <button class="share-btn" onclick="shareLink('https://drive.google.com/file/d/1yaxubqLiB2xwC5I0wsCxYTDLO9PBrEqO/view')">📤 Share</button>
+        <button class="copy-btn" onclick="copyToClipboard('https://drive.google.com/file/d/1yaxubqLiB2xwC5I0wsCxYTDLO9PBrEqO/view')">📋 Copy Link</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(function() {
+        alert("🔗 Link copied to clipboard!");
+      }, function(err) {
+        alert("❌ Failed to copy the link.");
+      });
+    }
+
+    function shareLink(link) {
+      if (navigator.share) {
+        navigator.share({
+          title: 'OLAMPUS Training Video',
+          url: link
+        }).catch((err) => console.log('Error sharing:', err));
+      } else {
+        copyToClipboard(link);
+      }
+    }
+  </script>
+
+</body>
+</html>
